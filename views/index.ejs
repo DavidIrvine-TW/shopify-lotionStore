@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- <button>Click!</button> -->
+
+
+    <main>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#">Open Sidebar</a>
+                </li>
+                <li>
+                    <a href="#">Change theme</a>
+                </li>
+            </ul>
+        </nav>
+        <h1>TODOS</h1>
+        <ul class="todo-list">
+            <% todos.forEach(function(todo) { %>
+                <li class="list-item"><%= todo %></li>
+            <% }); %>
+        </ul>
+        <form class="todo-form">
+            <input id="input-field" class="add-todo" placeholder="add todo" type="text" />
+        </form>
+    </main>
+
+
+
+
+
+
+
+
+<script src="/bundle.js" ></script>
+    <!-- 
+    <script>
+        const counter = {
+            cnt:0,
+
+            inc: function() {
+                this.cnt++;
+                console.log(this.cnt)
+            }
+        };
+        const button = document.getElementsByTagName('button')[0]
+        button.addEventListener('click', function() {counter.inc()}, false)
+    </script> -->
+
+</body>
+
+</html>
